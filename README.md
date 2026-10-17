@@ -23,4 +23,6 @@ Then open http://localhost:4173/. `serve` clean URLs load `solutions.html` at `/
 
 ## Deploy
 
-Deploy target is [Netlify](https://www.netlify.com/). Connect the repository and publish the site root. `netlify.toml` sets `publish = "."` and leaves Pretty URLs post-processing off so `/solutions` and `/solutions.html` both return the page, the same way the current site does. No build command is required.
+The site is hosted on [Vercel](https://vercel.com/) at [datatags.co](https://datatags.co). `vercel.json` publishes the repository root as a static site with no build step (`framework` and `buildCommand` are null). Rewrites serve `solutions.html`, `contact.html`, and `book-strategy-call.html` at `/solutions`, `/contact`, and `/book-strategy-call`. `cleanUrls` stays off, so those `.html` URLs still return the same files instead of redirecting. Trailing slashes redirect to the extensionless path.
+
+[Netlify](https://www.netlify.com/) config remains in `netlify.toml`. It publishes the repository root and leaves Pretty URLs post-processing off so `/solutions` and `/solutions.html` both return the page. No build command is required there either.
