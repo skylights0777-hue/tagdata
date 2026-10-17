@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Strategy Call | TagData</title>
+    <meta
+      name="description"
+      content="Book a TagData strategy call for enterprise AI data operations, human-in-the-loop validation, model evaluation, and AI governance."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="booking.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class='brand' href='/'>TagData</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href='/'>Home</a>
+          <a href='/solutions'>Solutions</a>
+          <a href='/contact'>Contact</a>
+          <a aria-current='page' href='/book-strategy-call'>Book Call</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section-border">
+        <div class="container">
+          <p class="eyebrow pill">Book a Strategy Call</p>
+          <h1>Share your AI goals and bottlenecks.</h1>
+          <p>
+            Use the form below to send a strategy-call request. Your email app will open with the request addressed
+            to TagData and copied to the requester.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container booking-grid">
+          <form class="contact-form strategy-form" id="strategyForm">
+            <div class="form-row">
+              <label>
+                Full Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Work Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Company
+                <input type="text" name="company" autocomplete="organization" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+            </div>
+
+            <label>
+              What are you looking for?
+              <select name="need" required>
+                <option value="">Select a focus area</option>
+                <option>AI DataOps and labeling</option>
+                <option>Human-in-the-loop AI review</option>
+                <option>Multimodal AI workflows</option>
+                <option>AI model evaluation</option>
+                <option>AI governance and monitoring</option>
+                <option>Enterprise AI transformation</option>
+              </select>
+            </label>
+
+            <label>
+              Timeline
+              <select name="timeline" required>
+                <option value="">Select a timeline</option>
+                <option>Immediate</option>
+                <option>Next 30 days</option>
+                <option>Next quarter</option>
+                <option>Exploring options</option>
+              </select>
+            </label>
+
+            <label>
+              Project Details
+              <textarea
+                name="details"
+                rows="7"
+                placeholder="Tell us about the AI workflow, model, data challenge, review process, or production goal."
+                required
+              ></textarea>
+            </label>
+
+            <button class="button button-primary" type="submit">Send Strategy Call Request</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-panel booking-panel">
+            <p class="eyebrow">What Happens Next</p>
+            <ul>
+              <li>Your request is sent to the TagData team.</li>
+              <li>The requester email is copied for confirmation.</li>
+              <li>TagData reviews your AI workflow needs before the call.</li>
+              <li>The call focuses on production readiness, data quality, human review, and model evaluation.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
