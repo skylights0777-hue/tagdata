@@ -1,0 +1,12 @@
+# Static marketing site. Netlify publishes this repository root as-is.
+# There is no build step.
+#
+# With a file such as solutions.html, Netlify serves both /solutions and
+# /solutions.html (200) and redirects /solutions/ to /solutions. That is the
+# live site's behavior. Pretty URLs post-processing is left off on purpose:
+# turning it on 301s /solutions.html to /solutions and rewrites anchors.
+[build]
+  publish = "."
+
+[build.processing.html]
+  pretty_urls = false

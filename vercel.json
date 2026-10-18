@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/solutions", "destination": "/solutions.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/book-strategy-call", "destination": "/book-strategy-call.html" }
+  ]
+}

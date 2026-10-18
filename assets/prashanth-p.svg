@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Prashanth P portrait illustration</title>
+  <desc id="desc">Professional portrait placeholder for Prashanth P.</desc>
+  <defs>
+    <linearGradient id="bg" x1="1" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1d2430"/>
+      <stop offset="1" stop-color="#07090c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#79a8ff"/>
+      <stop offset="1" stop-color="#52d273"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="760" rx="34" fill="url(#bg)"/>
+  <circle cx="120" cy="132" r="100" fill="#79a8ff" opacity=".15"/>
+  <circle cx="520" cy="620" r="132" fill="#52d273" opacity=".11"/>
+  <circle cx="320" cy="248" r="126" fill="#c3cad5"/>
+  <path fill="#141922" d="M188 250c8-81 58-143 139-145 82-2 128 55 133 134-34-21-70-31-117-31-65 0-108 18-155 42z"/>
+  <path fill="#1e2635" d="M144 626c20-123 91-190 176-190s156 67 176 190v60H144z"/>
+  <path fill="url(#accent)" d="M218 684h204l-34-172c-21 17-44 27-68 27s-47-10-68-27z" opacity=".86"/>
+  <text x="320" y="705" text-anchor="middle" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">PP</text>
+</svg>
