@@ -18,9 +18,9 @@
     const timeline = data.get("timeline");
     const details = data.get("details").trim();
 
-    const subject = `TagData strategy call request from ${name}`;
+    const subject = `TagFoundry strategy call request from ${name}`;
     const body = [
-      "A new TagData strategy call request was submitted.",
+      "A new TagFoundry strategy call request was submitted.",
       "",
       `Name: ${name}`,
       `Requester Email: ${email}`,

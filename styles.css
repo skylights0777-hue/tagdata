@@ -782,3 +782,46 @@ h3 {
     min-height: 82px;
   }
 }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.footer-shell {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+}
+
+.footer-brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.footer-shell p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 800px) {
+  .footer-shell {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
